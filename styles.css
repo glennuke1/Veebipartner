@@ -1,0 +1,147 @@
+:root {
+    --bg: #0f172a;
+    --bg-light: #111827;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg), var(--bg-light));
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    padding: 24px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--muted);
+    margin-left: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto 32px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--primary);
+    color: #020617;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.card h4 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.card.yearly {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.pricing {
+    max-width: 900px;
+    margin: auto;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 16px 0;
+}
+
+footer {
+    padding: 40px 10%;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card.yearly {
+        margin-top: 6rem;
+    }
+}
