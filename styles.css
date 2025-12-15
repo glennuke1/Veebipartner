@@ -146,6 +146,15 @@ footer {
         padding-top: 1rem;
         font-size: 3.0rem;
     }
+
+    nav a{
+        margin-left: 24px;
+    }
+
+    nav {
+        margin-left: -24px;
+    }
+
     .cards {
         gap: 1.5rem;
     }
